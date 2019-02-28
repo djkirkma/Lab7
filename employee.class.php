@@ -4,19 +4,19 @@ abstract class Employee{
     private $ssn;
     private $employee_count;
     
-    abstract public function __construct() {
+    abstract protected function __construct() {
 
     }
-    abstract public function getPerson() {
+    abstract protected function getPerson() {
         return $this->person;
     }
-    abstract public function getSSN() {
+    abstract protected function getSSN() {
         return $this->ssn;
     }
-    abstract public function getEmployeeCount() {
+    abstract protected function getEmployeeCount() {
         return $this-employee_count;
     }
-    abstract public function toString() {
+    abstract protected function toString() {
         echo "";
     }
 }
