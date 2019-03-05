@@ -2,7 +2,7 @@
 abstract class Employee{
     private $person;
     private $ssn;
-    private $employee_count;
+    private static $employee_count = 0;
     
     abstract public function __construct();
     abstract public function getPerson();
