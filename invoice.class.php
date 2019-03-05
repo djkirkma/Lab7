@@ -8,7 +8,7 @@ public class Invoice implements Payable {
     private static $invoice_count = 0;
     
     public function __construct() {
-        self::invoice_count++;
+        self::$invoice_count++;
     }
     public function getPartNumber() {
         return $this->part_number

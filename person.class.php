@@ -1,6 +1,6 @@
 <?php
-require_once("employee.class.php")
-public class Person extends Employee{
+require_once("employee.class.php");
+  class Person {
     private $first_name;
     private $last_name;
     
@@ -12,7 +12,7 @@ public class Person extends Employee{
         return $this->first_name;
     }
     public function getLastName() {
-        return $this>last_name;
+        return $this->last_name;
     }
     public function toString() {
         echo "First name: " . $this->getFirstName() . " Last name: " . $this->getLastName();

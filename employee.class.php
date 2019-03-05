@@ -1,14 +1,26 @@
 <?php
-abstract class Employee{
+abstract class Employee implements Payable{
     private $person;
     private $ssn;
     private static $employee_count = 0;
     
-    abstract public function __construct();
-    abstract public function getPerson();
-    abstract public function getSSN();
-    abstract public function getEmployeeCount();
-    abstract public function toString();
+    public function __construct($myPerson,$mySsn) {
+        $this->person = $myPerson;
+        $this->ssn = $mySsn;
+        self::$employee_count++;
+    }
+    public function getPerson() {
+        return $this->person;
+    }
+    public function getSSN() {
+        return $this->ssn;
+    }
+    public function getEmployeeCount() {
+        return $this-employee_count;
+    }
+    public function toString() {
+        echo "Yo I am an employee";
+    }
 }
 
 ?>
