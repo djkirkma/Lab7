@@ -13,7 +13,7 @@ public class SalariedEmployee {
         return $paymentAmount;  // Not finished
     }
     public function toString() {
-        echo "";  //Notfinished
+        echo "";  //Not finished
     }
 }
 ?>
