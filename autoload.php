@@ -13,9 +13,6 @@
  function __autoload($class) {
     require_once camelCaseToUnderscore($class) . '.class.php';
 }
-$Person1 = new Person("Jay","Conway");
-
-echo $Person1.toString();
 
 ?>
 

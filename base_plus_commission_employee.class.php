@@ -1,6 +1,6 @@
 <?php
-require_once("commission_employee.class.php")
-public class BasePlusCommissionEmployee extends CommissionEmployee {
+require_once("commission_employee.class.php");
+class BasePlusCommissionEmployee extends CommissionEmployee {
     
     private $base_salary;
     
@@ -15,7 +15,7 @@ public class BasePlusCommissionEmployee extends CommissionEmployee {
         return parent::getPaymentAmount() + $this->getBaseSalary();
     }
     public function toString() {
-        echo "My wage is " . $this->getPaymentAmount();
+        echo "I am a Base Plus Comission Employee: my base salary is $" . $this->getBaseSalary() . " and my payment is $" . $this->getPaymentAmount();
     }
 }
 ?>

@@ -1,6 +1,6 @@
 <?php
 require_once("employee.class.php");
-public class HourlyEmployee extends Employee {
+class HourlyEmployee extends Employee {
     private $wage;
     private $hours;
     
@@ -23,7 +23,7 @@ public class HourlyEmployee extends Employee {
         }
     }
     public function toString() {
-        echo "My wage is " . $this->getWage() . ", my hours are " . $this->getHours() . " and my Payment Amount is " . $this->getPaymentHours;
+        echo "I am a Hourly Employee: my wage is $" . $this->getWage() . ", my hours are " . $this->getHours() . " hours, and my Payment Amount is $" . $this->getPaymentAmount();
     }
 }
 

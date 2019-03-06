@@ -1,12 +1,12 @@
 <?php
-require_once("employee.clas.php");
-public class CommissionEmployee extends Employee {
+require_once("employee.class.php");
+class CommissionEmployee extends Employee {
     private $sales;
     private $commission_rate;
     
     public function __construct($mySales, $mycomission_rate) {
         $this->sales = $mySales;
-        $this->$commission_rate = $mycomission_rate;
+        $this->commission_rate = $mycomission_rate;
     }
     public function getSales() {
         return $this->sales;
@@ -15,10 +15,10 @@ public class CommissionEmployee extends Employee {
         return $this->commission_rate;
     }
     public function getPaymentAmount() {
-        return $mySales * $mycomission_rate;
+        return $this->sales * $this->getCommissionRate();
     }
     public function toString() {
-        echo "My wage is " . $this->getPaymentAmount() . " per week";
+        echo "I am a Comission Employee: my sales are $" . $this->getSales() . ", my rate is " . $this->getCommissionRate() .", and my wage is $" . $this->getPaymentAmount() . " per week";
     }
     
 }

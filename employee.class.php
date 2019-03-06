@@ -15,11 +15,11 @@ abstract class Employee implements Payable{
     public function getSSN() {
         return $this->ssn;
     }
-    public function getEmployeeCount() {
+    public static function getEmployeeCount() {
         return $this-employee_count;
     }
     public function toString() {
-        echo "Yo I am an employee";
+        echo "I am an employee.  My person is " . $this->person->toString() . " my SSN: " . $ssn . " employee count is " . $this->getEmployeeCount();
     }
 }
 

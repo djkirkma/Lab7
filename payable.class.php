@@ -1,6 +1,5 @@
 <?php
-require_once("employee.class.php");
-public interface Payable extends Employee{
+interface Payable {
     
     public function getPaymentAmount();
     public function toString();

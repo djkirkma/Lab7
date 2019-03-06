@@ -1,6 +1,6 @@
 <?php
 require_once("employee.class.php");
-public class SalariedEmployee {
+class SalariedEmployee {
     private $weekly_salary;
     
     public function __construct($float) {
@@ -13,7 +13,7 @@ public class SalariedEmployee {
         return $this->weekly_salary;  
     }
     public function toString() {
-        echo "I am paid " . $this->getPaymentAmount() . " per week.";
+        echo "I am a Salaried Employee: I am paid $" . $this->getPaymentAmount() . " per week.";
     }
 }
 ?>
