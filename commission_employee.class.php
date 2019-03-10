@@ -18,7 +18,7 @@ class CommissionEmployee extends Employee {
         return $this->sales * $this->getCommissionRate();
     }
     public function toString() {
-        echo "I am a Comission Employee: my sales are $" . $this->getSales() . ", my rate is " . $this->getCommissionRate() .", and my wage is $" . $this->getPaymentAmount() . " per week";
+        echo "I am a Comission Employee:<br>My sales are $" . $this->getSales() . "<br>My rate is " . $this->getCommissionRate() ."<br>My wage is $" . $this->getPaymentAmount() . " per week";
     }
     
 }

@@ -15,7 +15,7 @@ require_once("employee.class.php");
         return $this->last_name;
     }
     public function toString() {
-        echo "First name: " . $this->getFirstName() . " Last name: " . $this->getLastName();
+        echo "<b>First name:</b> " . $this->getFirstName() . "<br><b>Last name:</b> " . $this->getLastName();
     }
 }
 

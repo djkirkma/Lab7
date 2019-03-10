@@ -15,7 +15,7 @@ class BasePlusCommissionEmployee extends CommissionEmployee {
         return parent::getPaymentAmount() + $this->getBaseSalary();
     }
     public function toString() {
-        echo "I am a Base Plus Comission Employee: my base salary is $" . $this->getBaseSalary() . " and my payment is $" . $this->getPaymentAmount();
+        echo "I am a Base Plus Comission Employee:<br> My base salary is $" . $this->getBaseSalary() . "<br>My payment is $" . $this->getPaymentAmount();
     }
 }
 ?>

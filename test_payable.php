@@ -10,22 +10,22 @@ echo $Person1->toString();
 
 //Salaried
 $SalariedEmployee1 = new SalariedEmployee(1000);
-echo "<br>";
+echo "<br><br>";
 $SalariedEmployee1->toString();
 //Comission
 $CommissionEmployee1 = new CommissionEmployee(100, .5);
-echo "<br>";
+echo "<br><br>";
 $CommissionEmployee1->toString();
 //Hourly
 $HourlyEmployee1 = new HourlyEmployee(10, 15);
-echo "<br>";
+echo "<br><br>";
 $HourlyEmployee1->toString();
 
 $BasePlusCommissionEmployee1 = new BasePlusCommissionEmployee(10, 15);
-echo "<br>";
+echo "<br><br>";
 $BasePlusCommissionEmployee1->toString();
 
 $Invoice1 = new Invoice(123,"cool part", 2, 5.00);
-echo "<br>";
+echo "<br><br>";
 $Invoice1->toString();
 ?>

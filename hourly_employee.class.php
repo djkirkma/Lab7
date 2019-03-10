@@ -23,7 +23,7 @@ class HourlyEmployee extends Employee {
         }
     }
     public function toString() {
-        echo "I am a Hourly Employee: my wage is $" . $this->getWage() . ", my hours are " . $this->getHours() . " hours, and my Payment Amount is $" . $this->getPaymentAmount();
+        echo "I am a Hourly Employee: my wage is $" . $this->getWage() . "<br>My hours are " . $this->getHours() . " hours<br>My payment amount is $" . $this->getPaymentAmount();
     }
 }
 

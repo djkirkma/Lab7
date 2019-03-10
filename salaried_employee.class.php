@@ -13,7 +13,7 @@ class SalariedEmployee {
         return $this->weekly_salary;  
     }
     public function toString() {
-        echo "I am a Salaried Employee: I am paid $" . $this->getPaymentAmount() . " per week.";
+        echo "I am a Salaried Employee:<br>I am paid $" . $this->getPaymentAmount() . " per week.";
     }
 }
 ?>

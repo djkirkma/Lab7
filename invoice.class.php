@@ -31,7 +31,7 @@ class Invoice implements Payable {
         return $this->getPricePerItem() * $this->getQuantity();
     }
     public function toString() {
-        echo "Invoice PartNumber: " . $this->getPartNumber() . " Description: " . $this->getPartDescription() . " Quantity: " . $this->getQuantity() . " Prce per item " . $this->getPricePerItem() . "Payment Amount: " . $this->getPaymentAmount();
+        echo "<b>Invoice</b> <br>Part Number: " . $this->getPartNumber() . "<br>Description: " . $this->getPartDescription() . "<br>Quantity: " . $this->getQuantity() . "<br>Price per item: $" . $this->getPricePerItem() ."<br>Payment Amount: $" . $this->getPaymentAmount();
     }
     public static function getInvoiceCount() {
         return self::invoice_count;
