@@ -1,4 +1,12 @@
 <?php
+/** Author: Doug Kirkman, Jay Conway, Hannah Curtis
+ * Date: 3/10/2019
+ * Name: test_payable.php
+ * Demonstrates Lab 7 objects, polymorphism, and counts
+ * */
+
+
+//Autoload classes
 require_once("autoload.php");
 //Person object
 $Person1 = new Person("Jay","Conway");
